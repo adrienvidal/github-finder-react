@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, Fragment } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import About from './components/pages/About';
@@ -12,19 +12,6 @@ import './App.css';
 const App = () => {
   const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState(null);
-
-  /* useEffect(() => {
-    getUsers();
-  }, []);
-
-  const getUsers = async () => {
-    setLoading(true);
-    const res = await axios.get(
-      `https://api.github.com/users?client_id=${process.env.REACT_APP_GITHUB_CLIENT_ID}&client_secret=${process.env.REACT_APP_GITHUB_CLIENT_SECRET}`
-    );
-    setUsers(res.data);
-    setLoading(false);
-  }; */
 
   // set alert
   const showAlert = (msg, type) => {
