@@ -1,6 +1,6 @@
 # Github Finder React
 
-* React Hooks with State
+* React Hooks with Context
 * Api Github
 
 ```
